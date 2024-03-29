@@ -1,11 +1,11 @@
-package com.example.anotacoes.entity;
+package com.example.anotacoes.datasource.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "cadernos")
+@Table(name = "caderno")
 public class CadernoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,6 +14,6 @@ public class CadernoEntity {
     private String nome;
 
     @ManyToOne
-    @JoinColumn(name = "id_usuario", referencedColumnName = "id")
+    @JoinColumn(name = "id_usuario")
     private UsuarioEntity usuario;
 }
