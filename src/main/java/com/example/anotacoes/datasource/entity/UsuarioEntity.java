@@ -24,15 +24,14 @@ public class UsuarioEntity implements UserDetails {
 
     private String senha;
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "usuarios_perfis",
             joinColumns = @JoinColumn(name = "usuario_id"),
             inverseJoinColumns = @JoinColumn(name = "perfil_id")
     )
-    private Set<PerfilEntity> perfis;
 
-    public boolean validaLogin(LoginRequest loginRequest, BCryptPasswordEncoder bCryptencoder) {
+    public boolean senhaValida(LoginRequest loginRequest, BCryptPasswordEncoder bCryptencoder) {
         return bCryptencoder.matches(
                 loginRequest.senha(),
                 this.senha
@@ -41,7 +40,7 @@ public class UsuarioEntity implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return this.getPerfis();
+        return null;
     }
 
     @Override
