@@ -56,8 +56,8 @@ Este projeto Java baseado em Spring é uma aplicação de gerenciamento de notas
 ## 📋 Todo List
 - [x] [Exercício 1 - Setup do Projeto](#-m1s11-ex-1---setup-do-projeto-anotações)
 - [x] [Ex 2 - CRUD Caderno](#-m1s11-ex-2---crud-caderno)
-- [ ] [Ex 3 - CRUD Notas](#-m1s11-ex-3---crud-notas)
-- [ ] [Ex 4 - Configuração Inicial de Segurança](#-m1s11-ex-4---configuração-inicial-de-segurança)
+- [x] [Ex 3 - CRUD Notas](#-m1s11-ex-3---crud-notas)
+- [x] [Ex 4 - Configuração Inicial de Segurança](#-m1s11-ex-4---configuração-inicial-de-segurança)
 - [ ] [Ex 5 - JWT na Segurança](#-m1s11-ex-5---jwt-na-segurança)
 - [ ] [Ex 6 - Endpoint de Cadastro Usuário](#-m1s11-ex-6---endpoint-de-cadastro-usuário)
 - [ ] [Ex 7 - Endpoint de Login](#-m1s11-ex-7---endpoint-de-login)
